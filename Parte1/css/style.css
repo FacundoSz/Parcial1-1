@@ -1,0 +1,34 @@
+body {
+	background-color: #cea175;
+}
+
+img {
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px double;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+span {
+	font-weight: bold;
+}
+
+#quote {
+	text-align: center;
+	font-size: 15px;
+	font-family: sans-serif;
+}

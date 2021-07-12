@@ -21,7 +21,11 @@ Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 // CREA TU FUNCION MAYUSCULAS aqui:
 
 
-
+function mayusculas(arr) {
+    for (var i = 0; i < arr.length; i++){
+        console.log(arr[i].toUpperCase());
+    }
+}
 
 /*
 Funciones 2 -  Crea una funcion llamada "calculateDogAge" que: 
@@ -36,7 +40,13 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 // CREA TU FUNCION calculateDogAge aqui:
 
 
-
+function calculateDogAge(year) 
+{
+  var dogYear = year;
+  var conversion = year * 7;
+  var message = 'Tu perro tiene ' + conversion + ' años perro.';
+    console.log(message);
+}
 
 
 /*
@@ -64,9 +74,21 @@ fahrenheitToCelsius(95) --> 35
 
 
 // CREA TUS FUNCIONES  aqui:
+function celsiusToFahrenheit(celsius) 
+{
+  var cTemp = celsius;
+  var cToFahr = cTemp * 9 / 5 + 32;
+  var message = cTemp+' grados celsius es igual a ' + Math.trunc(cToFahr) + ' grados Fahrenheit';
+    console.log(message);
+}
 
-
-
+function fahrenheitToCelsius(fahrenheit) 
+{
+  var fTemp = fahrenheit;
+  var fToCel = (fTemp - 32) * 5 / 9;
+  var message = fTemp+' grados Fahrenheit es igual a ' + Math.trunc(fToCel) + ' grados celsius.';
+    console.log(message);
+} 
 
 
 
@@ -77,13 +99,32 @@ A) Define un objeto tipo "Perro" que reciba 3 parametros
 1) Nombre
 2) Color
 3) Raza
+*/
+function Perro(Nombre, Color, Raza){
+    this.Nombre = Nombre;
+    this.Color = Color;
+    this.Raza = Raza;
+    this.printInfo = function(){
+        console.log("Nombre: " + Nombre + ", De color: " + Color + ", Raza: " + Raza);
+    }
+}
+/*
 
 
 B) Crea 3 objectos  con diferentes valores.
 
+*/
+let test1 = new Perro("Oddie", "Amarillo", "Mixta");
+    let test2 = new Perro("Moky", "Naranja", "Chihuahua");
+    let test3 = new Perro("Rocky", "Azul", "Pitbull");
+
+/*
+
 C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. Lo puedes hacer en una sola línea o en 3 lineas aparte. 
 
-
+*/
+console.log(test1.Nombre + "\n" + test2.Color + "\n" + test3.Raza);
+/*
 */
 
 
